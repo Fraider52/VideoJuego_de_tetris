@@ -1,0 +1,38 @@
+<! doctype html >
+< html >
+  < cabeza >
+    < título > Chat de Socket.IO </ título >
+    < estilo >
+      * { margen :  0 ; acolchado :  0 ; de caja de tamaño : frontera-box; }
+      cuerpo { fuente :  13 px Helvetica , Arial; }
+      formulario { fondo :  # 000 ; relleno :  3 px ; posición : fija; abajo :  0 ; ancho :  100 % ; }
+      formulario de  entrada { borde :  0 ; relleno :  10 px ; ancho :  90 % ; margen derecho :  0,5 % ; }
+       botón de formulario { ancho :  9 % ; fondo :  rgb ( 130 ,  224 ,  255 ); borde : ninguno; relleno :  10 px ; }
+      # mensajes { lista-estilo-tipo : ninguno; margen :  0 ; acolchado :  0 ; }
+      # mensajes  li { relleno :  5 px  10 px ; }
+      # mensajes  li : nth-child ( impar ) { fondo :  # eee ; }
+    </ estilo >
+  </ cabeza >
+  < cuerpo >
+    < ul  id = " mensajes " > </ ul >
+    < acción del formulario  = "" >
+      < input  id = " m " autocomplete = " off " /> < button > Enviar </ button >
+    </ formulario >
+    < script  src = " /socket.io/socket.io.js " > </ script >
+< script  src = " https://code.jquery.com/jquery-3.4.1.min.js " > </ script >
+< guión >
+    $ ( función  ( )  {
+      var  socket  =  io ( ) ;
+      $ ( 'formulario' ) . enviar ( función ( e ) {
+        e . preventDefault ( ) ;  // evita la recarga de la página
+        zócalo . emit ( 'mensaje de chat' ,  $ ( '#m' ) . val ( ) ) ;
+        $ ( '#m' ) . val ( '' ) ;
+        devolver  falso ;
+      } ) ;
+      zócalo . on ( 'mensaje de chat' ,  función ( msg ) {
+        $ ( '#mensajes' ) . añadir ( $ ( '<li>' ) . texto ( msg ) ) ;
+      } ) ;
+    } ) ;
+  </ script >
+  </ cuerpo >
+</ html >
