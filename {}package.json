@@ -1,0 +1,25 @@
+{
+    " nombre " : " VideoJuego_de_tetris " ,
+    " versión " : " 1.0.0 " ,
+    " descripción " : " - Fraider causil \ r - viviana petro \ r - sebastian novoa " ,
+    " main " : " index.js " ,
+    " scripts " : {
+      " prueba " : " echo \" Error: no se especificó ninguna prueba \ " && salida 1 " ,
+      " start_dev " : " nodemon index.js "
+    },
+    " repositorio " : {
+      " tipo " : " git " ,
+      " url " : " git + https: //github.com/Fraider52/VideoJuego_de_tetris.git "
+    },
+    " palabras clave " : [],
+    " autor " : " " ,
+    " licencia " : " ISC " ,
+    " errores " : {
+      " url " : " https://github.com/Fraider52/VideoJuego_de_tetris/issues"
+    },
+    " página de inicio " : "https://github.com/Fraider52/VideoJuego_de_tetris#readme " ,
+    " dependencias " : {
+      " express " : " ^ 4.17.1 " ,
+      " nodemon " : " ^ 4.2.0 "
+    }
+  }
