@@ -1,11 +1,11 @@
 {
     " nombre " : " VideoJuego_de_tetris " ,
     " versión " : " 1.0.0 " ,
-    " descripción " : " - Fraider causil \ r - viviana petro \ r - sebastian novoa " ,
+    " descripción " : " - Fraider causil  r - viviana petro r - sebastian novoa " ,
     " main " : " index.js " ,
     " scripts " : {
-      " prueba " : " echo \" Error: no se especificó ninguna prueba \ " && salida 1 " ,
-      " start_dev " : " nodemon index.js "
+      " prueba " : " echo \" Error: no se especificó ninguna prueba \" && salida 1 " ,
+      " start_dev" : " nodemon index.js "
     },
     " repositorio " : {
       " tipo " : " git " ,
